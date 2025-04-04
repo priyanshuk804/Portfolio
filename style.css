@@ -24,7 +24,7 @@ body {
   height: 100vh;
   background-image: url(images/bg.png);
   background-size:cover;
-  
+  margin-bottom:5%;
 }
 
 .logo {
@@ -366,15 +366,16 @@ nav .fa-solid {
     background-image: url(images/img2.jpg);
     margin-bottom: 50px;
     border-radius: 10px;
+    height:95vh:
   }
   .header-text {
-    margin-top: 110%;
-    font-size: 16px;
-    margin-left: 50px;
+    margin-top: 67vh;
+    font-size: 1rem;
+    margin-left: 10%;
     
   }
   .header-text h1 span{
-    color: #fff;
+    color: #f32929;
   }
   .header-text h1 {
     font-size: 30px;
