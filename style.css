@@ -430,6 +430,9 @@ nav .fa-solid {
   .copyright {
     font-size: 14px;
   }
+  .work{
+    height: 256px;
+  }
 }
 
 #msg{
