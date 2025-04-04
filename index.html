@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/28e1d7190c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logoNew.png" alt="logo" class="logo" />
+
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#Portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+      </div>
+      <div class="header-text">
+        <p>Frontend Developer</p>
+        <h1>
+          Hi, I'm <span>Priyanshu</span>.<br />
+          Nice to meet you.
+        </h1>
+      </div>
+    </div>
+
+    <div id="about">
+      <div class="container2">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/profile.png.jpg" alt="no image" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p>
+              I'm Priyanshu Kumar, a 3rd-year B.Tech student in Computer Science
+              and Information Technology at Dronacharya Group of Institutions.
+              With a strong interest in front-end development, databases, and
+              cutting-edge research, I enjoy creating innovative web
+              applications and exploring the latest advancements in technology.
+              I've worked on projects like a YouTube Clone and a Full-Stack Food
+              Delivery Website, which helped me enhance my practical skills. My
+              curiosity drives me toward emerging areas such as AI, cloud
+              security, and next-generation wireless communication like 6G. I'm
+              passionate about continuous learning and aim to contribute
+              meaningfully to the tech industry through creativity and
+              dedication.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Web Development</span><br />Front-end<br />Back-end
+                </li>
+                <li>
+                  <span>Database</span><br />SQL <br />
+                  MongoDB
+                </li>
+                <li><span>Version Control</span><br />Github</li>
+                <li>
+                  <span>Programming Languages</span
+                  ><br />C++,Java,Python,Javascript
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>Web Developer</span><br />2024</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Graduation</span><br />Dronacharya Group Of Institutions
+                  <br />Pursuing: Bachelor Of Technology(CSIT)
+                </li>
+                <li>
+                  <span>12th Boards</span><br />R.K. Dwarika College(Bseb)
+                  <br />Passed(2021)<br />PCM-70.4%
+                </li>
+                <li>
+                  <span>10th Boards</span><br />Sharon's Public School(Cbse)<br />Passed(2019)
+                  <br />All Subjects-80.6%
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Services------------------------------->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Our web development services include custom website design,
+              responsive web development, front-end and back-end development,
+              e-commerce solutions, UI/UX design, CMS integration, SEO
+              optimization, website maintenance, and performance enhancement.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-database"></i>
+            <h2>DBMS</h2>
+            <p>
+              We offer database design, development, optimization, migration,
+              security, and performance tuning services. Our SQL and NoSQL
+              solutions ensure efficient data management, integrity, and
+              scalability for seamless, secure, and high-performance database
+              operations.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-github"></i>
+            <h2>Git Hub</h2>
+            <p>
+              We provide GitHub services including repository setup, version
+              control, CI/CD integration, code collaboration, issue tracking,
+              and workflow automation. Our solutions enhance project management,
+              code security, and team collaboration for seamless development.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio----------------------------- -->
+    <div id="Portfolio">
+      <div class="container">
+        <h1 class="sub-title">Co-curricular Activities</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/Sports.jpg" />
+            <div class="layer">
+              <h3>Sports</h3>
+              <p>
+                Dedicated to physical fitness, discipline, and teamwork through
+                active participation in competitive sports. Engaging in
+                athletics enhances endurance, agility, leadership, and
+                perseverance, fostering a strong mindset and a commitment to
+                excellence.
+              </p>
+              <a href="#"><i class="fa-solid fa-lightbulb"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/Travel.png" />
+            <div class="layer">
+              <h3>Travelling</h3>
+              <p>
+                Passionate about exploring new cultures, destinations, and
+                experiences. Traveling enhances my adaptability, problem-solving
+                skills, and global perspective while fostering creativity,
+                communication, and a deeper appreciation for diversity.
+              </p>
+              <a href="#"><i class="fa-solid fa-plane"></i></a>
+            </div>
+          </div>
+        
+          <div class="work">
+            <img src="images/photography.jpg" />
+            <div class="layer">
+              <h3>Photography</h3>
+              <p>
+                Passionate about capturing moments, perspectives, and emotions
+                through the lens. Skilled in composition, lighting, and editing,
+                using photography to tell stories, preserve memories, and
+                explore creativity in diverse environments.
+              </p>
+              <a href="#"><i class="fa-solid fa-dove"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more..</a>
+      </div>
+    </div>
+
+    <!-- contact------------------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>priyanshupathak804@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> +918404957741</p>
+
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/priyanshu-kumar-927b72237"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://www.twitter.com/__priyanshu0007"><i class="fa-solid fa-x"></i></a>
+              <a href="https://wa.me/+918404957741"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            <a href="images/Resume_Final.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Enter Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg">Hello!</span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; Priyanshu. Made by the Law</p>
+      </div>
+    </div>
+
+    <!-- Javascript---------------------------- -->
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      var sidemenu = document.getElementById("sidemenu");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwDO-OGYUPUlHde2rm2mSAEgIzxfGWXNXVHmTLHeefAR_srEBI-VJUg6CDJSqP_UCsx/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
